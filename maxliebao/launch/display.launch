@@ -9,6 +9,7 @@
   <param
     name="use_gui"
     value="$(arg gui)" />
+  <!--joint_state_publisher的作用是向joint_state话题上发布joint状态, 以方便robot_state_publisher接受joint_state话题并生成tf-->
   <node
     name="joint_state_publisher"
     pkg="joint_state_publisher"
